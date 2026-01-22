@@ -1,0 +1,4 @@
+The PNGs are ending up to be super large. 12-14 MBs each. The website has trouble loading them. Runnig the command below
+seems to have lowered all of them to 3-4 MBs each. This is black magic to me and I have no clue how it did this. But now,
+the pizzas should load quicker. :-)
+nix-shell -p imagemagick --run "mogrify -resize 50% *.png"
