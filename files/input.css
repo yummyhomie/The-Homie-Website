@@ -38,3 +38,18 @@
   font-family: sunlightdreams;
   src: url("fonts/sunlightdreams.otf");
 }
+
+@font-face {
+  font-family: arcade_R;
+  src: url("fonts/ARCADE_R.TTF");
+}
+
+@font-face {
+  font-family: arcade_I;
+  src: url("fonts/ARCADE_I.TTF");
+}
+
+@font-face {
+  font-family: arcade_N;
+  src: url("fonts/ARCADE_N.TTF");
+}
