@@ -1,5 +1,20 @@
 @import "tailwindcss" source("../");
 
+@layer components {
+  .h1 {
+    @apply text-right font-altehaasbold text-[180px] mb-[-8px]
+  }
+  .nav {
+    @apply text-right font-altehaasreg font-extrabold text-4xl *:pl-2 mr-2
+  }
+  .h2 {
+    @apply font-altehaasbold text-7xl
+  }
+  .text {
+    @apply font-mono text-4xl
+  }
+}
+
 @theme {
   --font-trebuc: trebuc;
   --font-bluescreen: bluescreen;
@@ -7,6 +22,9 @@
   --font-altehaasreg: altehaasreg;
   --font-altehaasbold: altehaasbold;
   --font-sunlightdreams: sunlightdreams;
+  --font-arcade_r: arcade_r;
+  --font-arcade_i: arcade_i;
+  --font-arcade_n: arcade_n;
 }
 
 @font-face {
@@ -40,16 +58,16 @@
 }
 
 @font-face {
-  font-family: arcade_R;
+  font-family: arcade_r;
   src: url("fonts/ARCADE_R.TTF");
 }
 
 @font-face {
-  font-family: arcade_I;
+  font-family: arcade_i;
   src: url("fonts/ARCADE_I.TTF");
 }
 
 @font-face {
-  font-family: arcade_N;
+  font-family: arcade_n;
   src: url("fonts/ARCADE_N.TTF");
 }
