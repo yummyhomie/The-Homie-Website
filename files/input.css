@@ -1,5 +1,50 @@
 @import "tailwindcss" source("../");
 
+@layer components {
+  /* Generally Everything */
+  .h1 {
+    @apply text-right font-altehaasbold text-[180px] mb-[-8px]
+  }
+  .nav {
+    @apply text-right font-altehaasreg font-extrabold text-4xl *:pl-2 mr-2
+  }
+  .h2 {
+    @apply font-altehaasbold text-7xl mt-32
+  }
+  .h3 {
+    @apply font-altehaasbold text-6xl mt-12
+  }
+
+  .background {
+    @apply p-4 rounded-2xl mt-4 shadow-2xl shadow-blue-950
+  }
+  .text {
+    @apply font-libre text-3xl/loose pt-4 px-8 bg-gradient-to-b from-black/80 via-transparent to-black/80 text-shadow-lg text-shadow-black rounded-xl
+  }
+  .next-section {
+    @apply mt-4
+  }
+
+  .inline-code {
+    @apply bg-slate-500/50 rounded-md p-2 font-mono
+  }
+
+  /* PIZZA SECTION! */
+  .pizzas {
+    @apply flex justify-around gap-4 py-4
+  }
+
+  /* HOMELAB SECTION!!!! */
+  .code-embed {
+    @apply mx-auto w-[90%] my-8
+  }
+
+  /* CTF SECTION! */
+  .tag {
+    @apply font-mono text-2xl text-orange-600 mt-auto mb-0 pl-4 mr-auto
+  }
+}
+
 @theme {
   --font-trebuc: trebuc;
   --font-bluescreen: bluescreen;
@@ -7,6 +52,11 @@
   --font-altehaasreg: altehaasreg;
   --font-altehaasbold: altehaasbold;
   --font-sunlightdreams: sunlightdreams;
+  --font-arcade_r: arcade_r;
+  --font-arcade_i: arcade_i;
+  --font-arcade_n: arcade_n;
+  --font-arvo: arvo;
+  --font-libre: libre;
 }
 
 @font-face {
@@ -37,4 +87,34 @@
 @font-face {
   font-family: sunlightdreams;
   src: url("fonts/sunlightdreams.otf");
+}
+
+@font-face {
+  font-family: arcade_r;
+  src: url("fonts/ARCADE_R.TTF");
+}
+
+@font-face {
+  font-family: arcade_i;
+  src: url("fonts/ARCADE_I.TTF");
+}
+
+@font-face {
+  font-family: arcade_n;
+  src: url("fonts/ARCADE_N.TTF");
+}
+
+@font-face {
+  font-family: arcade_i;
+  src: url("fonts/ARCADE_I.TTF");
+}
+
+@font-face {
+  font-family: arvo;
+  src: url("fonts/Arvo-Regular.ttf");
+}
+
+@font-face {
+  font-family: libre;
+  src: url("fonts/LibreBaskerville-VariableFont_wght.ttf");
 }
