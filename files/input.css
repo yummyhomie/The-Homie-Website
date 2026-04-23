@@ -5,7 +5,7 @@
   .h1 {
     @apply 
     /* mobile - default */
-    font-altehaasbold text-center text-[120px] block
+    font-altehaasbold text-center text-[90px] block
     /* tablet */
     md:text-[160px] md:mb-[-8px]
     /* desktop */
@@ -14,9 +14,9 @@
   .nav {
     @apply 
     /* mobile - default */
-    text-center font-altehaasreg font-extrabold text-4xl *:pl-4
+    text-center font-altehaasreg font-extrabold text-3xl
     /* tablet */
-    md:*:pl-2 md:mr-2
+    md:*:pl-2 md:mr-2 md:text-4xl
     /* desktop */
     lg:text-right
   }
