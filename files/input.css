@@ -41,6 +41,10 @@
     @apply bg-slate-500/50 rounded-md p-2 font-mono
   }
 
+  .YES {
+    @apply transition-all duration-800 hover:text-8xl
+  }
+
   /* PIZZA SECTION! */
   .pizzas {
     @apply 
