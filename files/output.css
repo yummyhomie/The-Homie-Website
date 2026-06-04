@@ -1,4 +1,4 @@
-/*! tailwindcss v4.2.2 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.2.4 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -222,6 +222,9 @@
   .grid {
     display: grid;
   }
+  .table {
+    display: table;
+  }
   .w-\[40\%\] {
     width: 40%;
   }
@@ -240,11 +243,29 @@
   .w-\[500px\] {
     width: 500px;
   }
+  .w-\[600px\] {
+    width: 600px;
+  }
+  .w-\[650px\] {
+    width: 650px;
+  }
+  .w-\[700px\] {
+    width: 700px;
+  }
   .max-w-\[1280px\] {
     max-width: 1280px;
   }
+  .flex-grow {
+    flex-grow: 1;
+  }
   .grow {
     flex-grow: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-\[auto_1fr\] {
     grid-template-columns: auto 1fr;
@@ -254,6 +275,13 @@
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .bg-black {
+    background-color: var(--color-black);
   }
   .bg-black\/40 {
     background-color: color-mix(in srgb, #000 40%, transparent);
@@ -332,22 +360,9 @@
   .opacity-80 {
     opacity: 80%;
   }
-  .transition-all {
-    transition-property: all;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .duration-800 {
-    --tw-duration: 800ms;
-    transition-duration: 800ms;
-  }
-  .hover\:text-8xl {
-    &:hover {
-      @media (hover: hover) {
-        font-size: var(--text-8xl);
-        line-height: var(--tw-leading, var(--text-8xl--line-height));
-      }
-    }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .hover\:text-blue-600 {
     &:hover {
@@ -557,6 +572,11 @@
   font-family: libre;
   src: url("fonts/LibreBaskerville-VariableFont_wght.ttf");
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-leading {
   syntax: "*";
   inherits: false;
@@ -565,9 +585,10 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-duration {
+@property --tw-outline-style {
   syntax: "*";
   inherits: false;
+  initial-value: solid;
 }
 @property --tw-shadow {
   syntax: "*";
@@ -685,12 +706,17 @@
   inherits: false;
   initial-value: 100%;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
-      --tw-duration: initial;
+      --tw-outline-style: solid;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
@@ -716,6 +742,7 @@
       --tw-gradient-to-position: 100%;
       --tw-text-shadow-color: initial;
       --tw-text-shadow-alpha: 100%;
+      --tw-duration: initial;
     }
   }
 }
